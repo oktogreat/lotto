@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @lotto_type.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @lotto_type.name %>
+</p>
+
+<p>
+  <b>Rangebottom:</b>
+  <%= @lotto_type.rangeBottom %>
+</p>
+
+<p>
+  <b>Rangetop:</b>
+  <%= @lotto_type.rangeTop %>
+</p>
+
+
+<%= link_to 'Edit', edit_lotto_type_path(@lotto_type) %> |
+<%= link_to 'Back', lotto_types_path %>

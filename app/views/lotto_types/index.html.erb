@@ -1,0 +1,29 @@
+<h1>Listing lotto_types</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Rangebottom</th>
+    <th>Rangetop</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @lotto_types.each do |lotto_type| %>
+  <tr>
+    <td><%= lotto_type.id %></td>
+    <td><%= lotto_type.name %></td>
+    <td><%= lotto_type.rangeBottom %></td>
+    <td><%= lotto_type.rangeTop %></td>
+    <td><%= link_to 'Show', lotto_type %></td>
+    <td><%= link_to 'Edit', edit_lotto_type_path(lotto_type) %></td>
+    <td><%= link_to 'Destroy', lotto_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Lotto type', new_lotto_type_path %>

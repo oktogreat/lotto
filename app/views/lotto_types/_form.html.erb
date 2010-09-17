@@ -1,0 +1,33 @@
+<%= form_for(@lotto_type) do |f| %>
+  <% if @lotto_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lotto_type.errors.count, "error") %> prohibited this lotto_type from being saved:</h2>
+
+      <ul>
+      <% @lotto_type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.text_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :rangeBottom %><br />
+    <%= f.text_field :rangeBottom %>
+  </div>
+  <div class="field">
+    <%= f.label :rangeTop %><br />
+    <%= f.text_field :rangeTop %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
