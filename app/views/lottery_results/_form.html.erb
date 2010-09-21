@@ -1,0 +1,49 @@
+<%= form_for(@lottery_result) do |f| %>
+  <% if @lottery_result.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lottery_result.errors.count, "error") %> prohibited this lottery_result from being saved:</h2>
+
+      <ul>
+      <% @lottery_result.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :drawNumber %><br />
+    <%= f.text_field :drawNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :lotteryTypeId %><br />
+    <%= f.text_field :lotteryTypeId %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :drawSequence %><br />
+    <%= f.text_field :drawSequence %>
+  </div>
+  <div class="field">
+    <%= f.label :drawNumber %><br />
+    <%= f.text_field :drawNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :machineName %><br />
+    <%= f.text_field :machineName %>
+  </div>
+  <div class="field">
+    <%= f.label :ballSet %><br />
+    <%= f.text_field :ballSet %>
+  </div>
+  <div class="field">
+    <%= f.label :dayOfWeek %><br />
+    <%= f.text_field :dayOfWeek %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

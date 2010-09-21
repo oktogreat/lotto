@@ -10,7 +10,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100916151403) do
+ActiveRecord::Schema.define(:version => 20100921194810) do
+
+  create_table "lottery_results", :force => true do |t|
+    t.integer  "drawNumber"
+    t.integer  "lotteryTypeId"
+    t.date     "date"
+    t.integer  "drawSequence"
+    t.string   "machineName"
+    t.integer  "ballSet"
+    t.string   "dayOfWeek"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "lotto_types", :force => true do |t|
     t.string   "name"

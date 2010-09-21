@@ -1,4 +1,6 @@
 Lotto::Application.routes.draw do
+  resources :lottery_results
+
   resources :lotto_types
 
   get "home/index"

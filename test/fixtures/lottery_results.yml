@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  drawNumber: 1
+  lotteryTypeId: 1
+  date: 2010-09-21
+  drawSequence: 1
+  drawNumber: 1
+  machineName: MyString
+  ballSet: 1
+  dayOfWeek: MyString
+
+two:
+  drawNumber: 1
+  lotteryTypeId: 1
+  date: 2010-09-21
+  drawSequence: 1
+  drawNumber: 1
+  machineName: MyString
+  ballSet: 1
+  dayOfWeek: MyString

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Drawnumber:</b>
+  <%= @lottery_result.drawNumber %>
+</p>
+
+<p>
+  <b>Lotterytypeid:</b>
+  <%= @lottery_result.lotteryTypeId %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @lottery_result.date %>
+</p>
+
+<p>
+  <b>Drawsequence:</b>
+  <%= @lottery_result.drawSequence %>
+</p>
+
+<p>
+  <b>Drawnumber:</b>
+  <%= @lottery_result.drawNumber %>
+</p>
+
+<p>
+  <b>Machinename:</b>
+  <%= @lottery_result.machineName %>
+</p>
+
+<p>
+  <b>Ballset:</b>
+  <%= @lottery_result.ballSet %>
+</p>
+
+<p>
+  <b>Dayofweek:</b>
+  <%= @lottery_result.dayOfWeek %>
+</p>
+
+
+<%= link_to 'Edit', edit_lottery_result_path(@lottery_result) %> |
+<%= link_to 'Back', lottery_results_path %>
